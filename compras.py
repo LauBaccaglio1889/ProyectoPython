@@ -7,7 +7,7 @@ import os
 def ordenar_burbuja(datos):
     n = len(datos)
     for i in range(n):
-        for j in range(1, n - i - 1):
+        for j in range(0, n - i - 1):
             if (datos[j][0] > datos[j+1][0]) or (datos[j][0] == datos[j+1][0] and datos[j][1] > datos[j+1][1]):
                 datos[j], datos[j+1] = datos[j+1], datos[j]
     return datos
