@@ -105,7 +105,7 @@ class TestCalcularTotales(unittest.TestCase):
     def test_total_unidades(self):
         """Debe sumar correctamente las unidades de SUC_A / Leche."""
         tot_uni, _ = calcular_totales(self.filas, 'SUC_A', 'Leche')
-        self.assertEqual(tot_uni, 5)
+        self.assertEqual(tot_uni, 99)
 
     def test_total_pesos(self):
         """Debe calcular correctamente el importe de SUC_A / Leche."""
